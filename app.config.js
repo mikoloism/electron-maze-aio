@@ -14,6 +14,7 @@ module.exports = {
 		resizable: true,
 		alwaysOnTop: true,
 		autoHideMenuBar: true,
+		// contextIsolation: false,
 		webPreferences: {
 			nodeIntegration: true,
 		},
