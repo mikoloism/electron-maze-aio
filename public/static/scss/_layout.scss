@@ -1,0 +1,25 @@
+.board {
+	&,
+	&_row,
+	&_space {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		height: 100%;
+	}
+	&_row {
+		height: $resp-height;
+	}
+	&_space {
+		& {
+			width: $resp-width;
+		}
+
+		@each $prefix, $value in $maze-place {
+			&#{$prefix} {
+				background-color: #{$value};
+			}
+		}
+	}
+}
