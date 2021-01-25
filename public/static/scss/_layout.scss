@@ -1,7 +1,7 @@
 .board {
 	&,
 	&_row,
-	&_space {
+	&_place {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -11,10 +11,8 @@
 	&_row {
 		height: $resp-height;
 	}
-	&_space {
-		& {
-			width: $resp-width;
-		}
+	&_place {
+		width: $resp-width;
 
 		@each $prefix, $value in $maze-place {
 			&#{$prefix} {
