@@ -2,14 +2,15 @@
 	"name": "maze-ai",
 	"version": "0.1.1",
 	"description": "ai graphics maze router",
-	"main": "main.js",
+	"main": "app.js",
 	"scripts": {
+		"compile": "sass --watch --no-source-map public/static/scss/main.scss:public/static/css/main.css",
 		"start": "electron ."
 	},
 	"keywords": [
-		"tik-tok-toe",
-		"game",
-		"xo"
+		"maze",
+		"pathfinder",
+		"ai"
 	],
 	"author": "miko",
 	"license": "MIT",
