@@ -1,12 +1,12 @@
 $maze-place-default: #999;
 
 $maze-place: (
-	'-safe': #dedede,
-	'-wall': #555,
-	'-current': #936,
-	'-start': #396,
-	'-end': #6c3,
-	'-next': #c61,
+	'--safe': #dedede,
+	'--wall': #555,
+	'--current': #936,
+	'--start': #396,
+	'--end': #6c3,
+	'--next': #c61,
 );
 
 $count-rows: 7;

@@ -1,17 +1,17 @@
 .board {
 	&,
-	&_row,
-	&_place {
+	&__row,
+	&__place {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		width: 100%;
 		height: 100%;
 	}
-	&_row {
+	&__row {
 		height: $resp-height;
 	}
-	&_place {
+	&__place {
 		width: $resp-width;
 
 		@each $prefix, $value in $maze-place {
