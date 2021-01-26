@@ -1,9 +1,6 @@
-const path = require('path'),
-	public = path.join(__dirname, 'public');
 module.exports = {
-	public,
-	view: `${public}/views/app.html`,
-	'window-option': {
+	view: `./public/views/app.html`,
+	option: {
 		width: 350,
 		height: 370,
 		maxWidth: null,

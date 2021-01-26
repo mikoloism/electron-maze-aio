@@ -2,7 +2,7 @@ const [electron, config] = [require('electron'), require('./app.config.js')],
 	{ app, BrowserWindow } = electron;
 
 function createWindow() {
-	const main = new BrowserWindow(config['window-option']);
+	const main = new BrowserWindow(config.option);
 	main.loadFile(config.view);
 }
 app.whenReady().then(createWindow);
