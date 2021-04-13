@@ -14,6 +14,7 @@ module.exports = {
 		// contextIsolation: false,
 		webPreferences: {
 			nodeIntegration: true,
+			// contextIsolation: true,
 		},
 	},
 };
