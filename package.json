@@ -4,7 +4,8 @@
 	"description": "ai graphics maze router",
 	"main": "app.js",
 	"scripts": {
-		"compile": "sass --watch --no-source-map public/static/scss/main.scss:public/static/css/main.css",
+		"sass:watch": "sass --watch --no-source-map public/styles/scss/main.scss:public/styles/main.css",
+		"electron:start": "npm start",
 		"start": "electron ."
 	},
 	"keywords": [
