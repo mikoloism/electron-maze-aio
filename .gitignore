@@ -3830,8 +3830,6 @@ node_modules/yauzl/LICENSE
 node_modules/yauzl/package.json
 node_modules/yauzl/README.md
 .vscode/settings.json
-public/static/scss/main.css
-public/static/css/main.css
 node_modules/.package-lock.json
 node_modules/.bin/acorn
 node_modules/.bin/parser
@@ -4375,4 +4373,3 @@ node_modules/with/src/globals.ts
 node_modules/with/src/index.ts
 node_modules/with/src/reference.ts
 public/views/index.html
-public/styles/main.css
