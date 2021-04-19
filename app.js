@@ -8,7 +8,7 @@ const views = (...paths) => path.join(__dirname, 'public', 'views', ...paths);
 
 function createWindow() {
 	const main = new BrowserWindow(config.option);
-	main.loadFile(views('maze.html'));
+	main.loadFile(views(config.view));
 }
 app.whenReady().then(createWindow);
 app.on('window-all-closed', () => {
