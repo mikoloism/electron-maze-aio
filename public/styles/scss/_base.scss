@@ -55,7 +55,7 @@ $BOX_GAP: 3px;
 }
 
 %align-center {
-	@include align;
+	@include align(center, center, center);
 }
 %align-full {
 	@include align(stretch, stretch, stretch);
