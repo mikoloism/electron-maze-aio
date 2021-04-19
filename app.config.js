@@ -1,6 +1,5 @@
 module.exports = {
 	view: `index.html`,
-	pug: `index.pug`,
 	option: {
 		width: 350,
 		height: 370,

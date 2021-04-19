@@ -1,18 +1,14 @@
-const [electron, config, { views, pug }] = [
+const [electron, config, path] = [
 		require('electron'),
 		require('./app.config.js'),
-		require('./pugs/pug-compiler'),
+		require('path'),
 	],
 	{ app, BrowserWindow } = electron;
+const views = (...paths) => path.join(__dirname, 'public', 'views', ...paths);
 
-async function createWindow() {
-	try {
-		await pug(config.pug, config.view);
-		const main = new BrowserWindow(config.option);
-		main.loadFile(views(config.view));
-	} catch (err) {
-		console.log('[ERROR] : we have error!', err);
-	}
+function createWindow() {
+	const main = new BrowserWindow(config.option);
+	main.loadFile(views('maze.html'));
 }
 app.whenReady().then(createWindow);
 app.on('window-all-closed', () => {
