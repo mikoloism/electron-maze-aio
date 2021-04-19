@@ -9,4 +9,10 @@ const compiler = async (input, output, variables) => {
 	return true;
 };
 
-module.exports = { views: path, pug: compiler };
+const render = async (input, output, variables) => {
+	const html = await pug.renderFile(input);
+	await fs.writeFileSync(output, html, 'utf8');
+	return true;
+};
+
+module.exports = { views: path, pug: compiler, render };
