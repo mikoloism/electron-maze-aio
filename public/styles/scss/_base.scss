@@ -1,0 +1,65 @@
+$light: #f4f4f4;
+$dark: #434343;
+$black: #2a363b;
+$gray: #4a4e4d;
+
+$rose: #f7746e;
+$gold: #e6c356;
+
+$primary: #005b96;
+$info: #63ace5;
+$sky: #b3cde0;
+
+$BOX_WIDTH: 57px;
+$BOX_HEIGHT: 47px;
+$BOX_GAP: 3px;
+
+@mixin height($size: 1) {
+	height: $BOX_HEIGHT * $size;
+}
+@mixin width($size: 1) {
+	width: $BOX_WIDTH * $size;
+}
+@mixin box($w: 1, $h: 1) {
+	@include width($w);
+	@include height($h);
+}
+
+@mixin flex($wrap: wrap) {
+	display: flex;
+	flex-wrap: $wrap;
+}
+@mixin flex-row($wrap: wrap) {
+	@include flex($wrap);
+	flex-direction: row;
+}
+@mixin flex-col($wrap: wrap) {
+	@include flex($wrap);
+	flex-direction: column;
+}
+
+@mixin align($justify: flex-start, $items: flex-start, $content: flex-start) {
+	justify-content: $justify;
+	align-items: $items;
+	align-content: $content;
+}
+
+%flex {
+	@include flex();
+}
+%flex-row {
+	@include flex-row();
+}
+%flex-column {
+	@include flex-col();
+}
+
+%align-center {
+	@include align;
+}
+%align-full {
+	@include align(stretch, stretch, stretch);
+}
+%align-between {
+	@include align(space-between, center, space-between);
+}
