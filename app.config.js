@@ -1,5 +1,6 @@
 module.exports = {
-	view: `./public/views/app.html`,
+	view: `index.html`,
+	pug: `index.pug`,
 	option: {
 		width: 350,
 		height: 370,

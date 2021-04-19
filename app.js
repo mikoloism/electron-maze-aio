@@ -1,9 +1,18 @@
-const [electron, config] = [require('electron'), require('./app.config.js')],
+const [electron, config, { views, pug }] = [
+		require('electron'),
+		require('./app.config.js'),
+		require('./pug-compiler'),
+	],
 	{ app, BrowserWindow } = electron;
 
-function createWindow() {
-	const main = new BrowserWindow(config.option);
-	main.loadFile(config.view);
+async function createWindow() {
+	try {
+		await pug(config.pug, config.view);
+		const main = new BrowserWindow(config.option);
+		main.loadFile(views(config.view));
+	} catch (err) {
+		console.log('[ERROR] : we have error!');
+	}
 }
 app.whenReady().then(createWindow);
 app.on('window-all-closed', () => {
