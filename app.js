@@ -11,7 +11,7 @@ async function createWindow() {
 		const main = new BrowserWindow(config.option);
 		main.loadFile(views(config.view));
 	} catch (err) {
-		console.log('[ERROR] : we have error!');
+		console.log('[ERROR] : we have error!', err);
 	}
 }
 app.whenReady().then(createWindow);

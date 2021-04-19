@@ -12,10 +12,10 @@ module.exports = {
 		resizable: true,
 		alwaysOnTop: true,
 		autoHideMenuBar: true,
-		// contextIsolation: false,
+		// contextIsolation: true,
 		webPreferences: {
-			nodeIntegration: true,
-			// contextIsolation: true,
+			// nodeIntegration: true,
+			contextIsolation: true,
 		},
 	},
 };
