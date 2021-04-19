@@ -1,7 +1,7 @@
 const [electron, config, { views, pug }] = [
 		require('electron'),
 		require('./app.config.js'),
-		require('./src/helpers/pug-compiler'),
+		require('./pugs/pug-compiler'),
 	],
 	{ app, BrowserWindow } = electron;
 

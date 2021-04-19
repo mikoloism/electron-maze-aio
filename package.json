@@ -6,7 +6,7 @@
 	"scripts": {
 		"sass:watch": "sass --watch --no-source-map public/styles/scss/main.scss:public/styles/main.css",
 		"electron:start": "npm start",
-		"pug:watch": "node ./src/helpers/pug-watch.js -i public/views/index.pug -o public/views/index.html",
+		"pug:watch": "node ./pugs/pug-cli.js -i public/views/index.pug -o public/views/index.html",
 		"start": "electron ."
 	},
 	"keywords": [
