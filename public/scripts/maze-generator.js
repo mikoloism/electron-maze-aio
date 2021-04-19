@@ -1,4 +1,4 @@
-const generator = (rows = 33, columns = 33) => {
+const generator = async (rows = 33, columns = 33) => {
 	let maze = [];
 	let dirs = [
 		{ x: -2, y: 0 },
@@ -8,7 +8,7 @@ const generator = (rows = 33, columns = 33) => {
 	];
 	let goal = {};
 
-	const init = () => {
+	const init = async () => {
 		maze = maze.slice(0, 0);
 		for (let x = 0; x < columns; ++x) {
 			maze.push([]);
@@ -35,9 +35,9 @@ const generator = (rows = 33, columns = 33) => {
 			].filter(
 				(coord) =>
 					coord.x > 0 &&
-					coord.x < w &&
+					coord.x < columns &&
 					coord.y > 0 &&
-					coord.y < h &&
+					coord.y < rows &&
 					maze[coord.x][coord.y] === 0,
 			);
 
@@ -61,6 +61,6 @@ const generator = (rows = 33, columns = 33) => {
 		return maze;
 	};
 
-	return init();
+	return await init();
 };
-module.exports = generator;
+// module.exports = generator;
