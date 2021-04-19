@@ -1,0 +1,55 @@
+* {
+	box-sizing: border-box;
+	user-select: none;
+	transition: 0.3s ease all;
+}
+
+body,
+.board {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+.board,
+.board__row,
+.board__place {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+}
+
+.board__row {
+	height: 14.2857142857%;
+}
+
+.board__place {
+	width: 14.2857142857%;
+}
+
+.board__place--safe {
+	background-color: #dedede;
+}
+
+.board__place--wall {
+	background-color: #555;
+}
+
+.board__place--current {
+	background-color: #936;
+}
+
+.board__place--start {
+	background-color: #396;
+}
+
+.board__place--end {
+	background-color: #6c3;
+}
+
+.board__place--next {
+	background-color: #c61;
+}
