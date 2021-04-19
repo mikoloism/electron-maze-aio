@@ -10,9 +10,13 @@ $primary: #005b96;
 $info: #63ace5;
 $sky: #b3cde0;
 
-$BOX_WIDTH: 57px;
+$BOX_WIDTH: 47px;
 $BOX_HEIGHT: 47px;
 $BOX_GAP: 3px;
+
+@mixin variant($color) {
+	background-color: $color;
+}
 
 @mixin height($size: 1) {
 	height: $BOX_HEIGHT * $size;
@@ -57,9 +61,15 @@ $BOX_GAP: 3px;
 %align-center {
 	@include align(center, center, center);
 }
-%align-full {
+%align-full,
+%align-stretch {
 	@include align(stretch, stretch, stretch);
 }
 %align-between {
 	@include align(space-between, center, space-between);
+}
+
+%box-full {
+	width: 100%;
+	height: 100%;
 }
