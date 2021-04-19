@@ -1,6 +1,6 @@
 const [pug, pather, fs] = [require('pug'), require('path'), require('fs')];
 
-const views = pather.join(__dirname, 'public', 'views');
+const views = pather.join(__dirname, './../../public', 'views');
 const path = (...args) => pather.join(views, ...args);
 
 const compiler = async (input, output, variables) => {
