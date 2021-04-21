@@ -1,3 +1,13 @@
+/**
+ *
+ * @param {number} rows
+ * @param {number} columns
+ * @returns {Array<number[]>}
+ * * 0 => wall
+ * * 1 => path
+ * * 2 => start-point
+ * * 3 => end-point
+ */
 const generator = async (rows = 33, columns = 33) => {
 	let maze = [];
 	let dirs = [
@@ -58,7 +68,7 @@ const generator = async (rows = 33, columns = 33) => {
 			}
 		} while (stack.length > 0);
 		goal = furthest.cell;
-		return maze;
+		return { maze, goal: { x: goal.x, y: goal.y } };
 	};
 
 	return await init();
