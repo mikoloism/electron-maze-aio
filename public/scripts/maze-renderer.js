@@ -6,6 +6,7 @@ const _render = {
 
 const createRow = () => {
 	const row = document.createElement('div');
+	row.classList.add('mz__row');
 	return row;
 };
 const createColumn = ({ type = 'block' }) => {
@@ -30,9 +31,19 @@ const render = async (maze) => {
 	_render.rows = rows;
 	return rows;
 };
-const mount = async (element) => {
+const setClass = (el, cls) => {
+	el.classList.remove('mz__box--block');
+	el.classList.remove('mz__box--way');
+	el.classList.add(`mz__box--${cls}`);
+	el.dataset.type = cls;
+};
+const mount = async (element, { start = [1, 1], end }) => {
 	_render.mount = element;
 	const { rows, mount: app } = _render;
 	rows.map((row) => app.appendChild(row));
+	let [start_x, start_y] = start;
+	let [end_x, end_y] = end;
+	setClass(rows[start_x].children[start_y], 'start');
+	setClass(rows[end_x].children[end_y], 'end');
 	return rows.length === app.children.length;
 };
