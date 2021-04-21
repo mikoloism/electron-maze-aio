@@ -8,7 +8,7 @@
 
 ## Screenshots
 
-[<img src="./screenshots/maze-main-screenshot.png" alt="maze-main" width="280" height="290" />](./screenshots/maze-main-screenshot.png)
+[<img src="./screenshots/maze-main-screenshot.png" alt="maze-main" width="310" height="320" />](./screenshots/maze-main-screenshot.png)
 
 ## License
 
