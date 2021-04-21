@@ -5,3 +5,7 @@
 ![Maze Solver](https://img.shields.io/badge/Maze_Solver-c63f3f?style=for-the-badge)
 ![Playable Game](https://img.shields.io/badge/Playable_Game-c63f3f?style=for-the-badge)
 ![Path Finder](https://img.shields.io/badge/Path_Finder-c63f3f?style=for-the-badge)
+
+## Screenshots
+
+[![maze-main](./screenshots/maze-main-screenshot.png)](./screenshots/maze-main-screenshot.png)
