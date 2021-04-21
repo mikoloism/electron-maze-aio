@@ -1,7 +1,7 @@
 {
-	"name": "maze-ai",
-	"version": "0.1.1",
-	"description": "ai graphics maze router",
+	"name": "maze-aio",
+	"version": "0.2.1",
+	"description": "maze-all-in-one, everything we need to do with any maze [Game, Solver, Generator, Path Finder]",
 	"main": "app.js",
 	"scripts": {
 		"sass:watch": "sass --watch --no-source-map public/styles/scss/main.scss:public/styles/main.css",
@@ -10,8 +10,17 @@
 	},
 	"keywords": [
 		"maze",
+		"electron",
+		"electronjs",
+		"maze-runner",
+		"maze-pathfinder",
+		"maze-generator",
+		"maze-Playable",
+		"maze-game",
+		"maze-playable-game",
+		"maze-solver",
 		"pathfinder",
-		"ai"
+		"semi-ai"
 	],
 	"author": "miko",
 	"license": "MIT",
