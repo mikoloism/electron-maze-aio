@@ -1,5 +1,74 @@
+// @import './base';
+$MAZE_SIZE: 9;
+$MAZE_BG: darken($black, 3);
+$MAZE--here: $rose;
+$MAZE--next: $sky;
+$MAZE--failed: darken($info, 35%);
+$MAZE--block: $dark;
+$MAZE--path: $sky;
+$MAZE--start: $rose;
+$MAZE--end: seagreen;
+
+@mixin grid-row($size, $repeat) {
+	grid-template-rows: repeat($repeat, $size);
+}
+@mixin grid-col($size, $repeat) {
+	grid-template-columns: repeat($repeat, $size);
+}
+
+%grid-row-auto-null {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-rows: 0;
+	grid-auto-columns: 0;
+	grid-row: 0;
+	grid-column: 0;
+}
+
 .mz {
 	&__app {
-		// styles
+		// @extend %grid-row-auto-null;
+		// @include grid-row($BOX_WIDTH, 7);
+		// @include grid-col($BOX_WIDTH, 6);
+		@extend %box-full;
+		@extend %flex-column;
+		@extend %align-center;
+		@include variant($MAZE_BG);
+	}
+	&__row {
+		@extend %flex-row;
+		@include box($MAZE_SIZE, 1);
+	}
+	&__box {
+		@include box(1, 1);
+		@extend %flex-row;
+
+		&--block {
+			@include variant($MAZE--block);
+		}
+		&--way,
+		&--path {
+			@include variant($MAZE--path);
+		}
+
+		&--start {
+			@include variant($MAZE--start);
+		}
+		&--end {
+			@include variant($MAZE--end);
+		}
+
+		&--here,
+		&--current {
+			@include variant($MAZE--here);
+		}
+
+		&--next {
+			@include variant($MAZE--next);
+		}
+
+		&--failed {
+			@include variant($MAZE--failed);
+		}
 	}
 }
