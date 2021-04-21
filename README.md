@@ -1,9 +1,9 @@
 # Maze All-in-One
 
-![GitHub](https://img.shields.io/github/license/miko-github/maze-aio-with-electron)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/miko-github/maze-aio-with-electron)
 ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/miko-github/maze-aio-with-electron/electron)
 ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/miko-github/maze-aio-with-electron/sass)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/miko-github/maze-aio-with-electron)
+![GitHub](https://img.shields.io/github/license/miko-github/maze-aio-with-electron)
 
 ---
 
