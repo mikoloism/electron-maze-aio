@@ -1,0 +1,68 @@
+.mz__box, .mz__row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.mz__app, body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.mz__app, body {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.mz__app {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  line-height: 2rem;
+  color: #434343;
+  background-color: #f4f4f4;
+}
+
+.mz__app {
+  background-color: #242e32;
+}
+.mz__row {
+  width: 423px;
+  height: 47px;
+}
+.mz__box {
+  width: 47px;
+  height: 47px;
+}
+.mz__box--block {
+  background-color: #434343;
+}
+.mz__box--way, .mz__box--path {
+  background-color: #b3cde0;
+}
+.mz__box--start {
+  background-color: #f7746e;
+}
+.mz__box--end {
+  background-color: seagreen;
+}
+.mz__box--here, .mz__box--current {
+  background-color: #f7746e;
+}
+.mz__box--next {
+  background-color: #b3cde0;
+}
+.mz__box--failed {
+  background-color: #155180;
+}
