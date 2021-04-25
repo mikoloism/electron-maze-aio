@@ -4,7 +4,7 @@
 ![Maze Generator][maze-generator]
 ![Maze Solver][maze-solver]
 ![Playable Game][maze-game]
-![Path Finder][maze-finder]
+[![Path Finder][maze-finder]](# "Actually only go on in the two point")
 
 ## Screenshots
 
