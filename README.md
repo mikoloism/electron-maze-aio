@@ -1,10 +1,10 @@
 # Maze All-in-One ![GitHub package.json dependency version (prod)][badge-electron] ![GitHub package.json dependency version (prod)][badge-sass] [![GitHub code size in bytes][badge-size]][link-electron] [![GitHub][badge-license]](./LICENSE)
 
-![ALL in ONE][maze-aio]
-![Maze Generator][maze-generator]
-![Maze Solver][maze-solver]
-![Playable Game][maze-game]
-[![Path Finder][maze-finder]](# "Actually only go on in the two point")
+[![ALL in ONE][maze-aio]](# "All of Action you want to doing with maze")
+[![Maze Generator][maze-generator]](# "generate a custom maze")
+[![Maze Solver][maze-solver]](# "program try to find the point")
+[![Playable Game][maze-game]](# "can you play alike game")
+[![Path Finder][maze-finder]](# "find path between to point")
 
 ## Screenshots
 
