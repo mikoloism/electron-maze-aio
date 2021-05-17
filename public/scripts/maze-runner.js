@@ -115,3 +115,5 @@ const runner = async (app, maze) => {
 		}
 	});
 };
+
+export { runner, unselect, availabeCheck, current, select, keybind, dirs };

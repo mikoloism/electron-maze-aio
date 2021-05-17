@@ -1,3 +1,9 @@
+'use strict';
+
+import generator from './maze-generator.js';
+import { mount, render } from './maze-renderer.js';
+import { runner } from './maze-runner.js';
+
 (async function () {
 	const { maze, goal } = await generator(9, 9);
 	await render(maze);

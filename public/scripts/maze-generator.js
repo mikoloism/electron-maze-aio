@@ -74,3 +74,4 @@ const generator = async (rows = 33, columns = 33) => {
 	return await init();
 };
 // module.exports = generator;
+export default generator;

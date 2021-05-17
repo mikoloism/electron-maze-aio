@@ -47,3 +47,5 @@ const mount = async (element, { start = [1, 1], end }) => {
 	setClass(rows[end_x].children[end_y], 'end');
 	return rows.length === app.children.length;
 };
+
+export { render, mount, setClass, createRow, createColumn };
